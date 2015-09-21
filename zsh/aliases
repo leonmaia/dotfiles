@@ -1,0 +1,35 @@
+# MySQL
+alias start_mysql="launchctl load -w ~/Library/LaunchAgents/com.mysql.mysqld.plist"
+alias stop_mysql="launchctl unload -w ~/Library/LaunchAgents/com.mysql.mysqld.plist"
+
+# Git
+alias g="git status"
+alias ga="git add"
+alias gaa="git add --all"
+alias gc="git commit -m"
+alias gca="git commit -am"
+alias gb="git branch"
+alias gba="git branch -a"
+alias gbd="git branch -d"
+alias gco="git checkout"
+alias gcob="git checkout -b"
+alias gf="git fetch"
+alias gm="git merge"
+alias gr="git rebase"
+alias gl="git log"
+alias gs="git show"
+alias gd="git diff"
+alias gbl="git blame"
+alias gps="git push"
+alias gpl="git pull --rebase"
+
+# TMUX
+alias ta="tmux attach"
+alias tls="tmux list-sessions"
+alias tk="tmux kill-server"
+alias t="tmux"
+
+# Personal
+alias start="cd ~/Projects"
+alias vi=vim
+alias gss="git status -sb"
