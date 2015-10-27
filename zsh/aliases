@@ -33,3 +33,5 @@ alias t="tmux"
 alias start="cd ~/Projects"
 alias vi=vim
 alias gss="git status -sb"
+alias gtest="./gradlew test"
+alias elastic="elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml"
