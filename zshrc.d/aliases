@@ -1,6 +1,4 @@
-# MySQL
-alias start_mysql="launchctl load -w ~/Library/LaunchAgents/com.mysql.mysqld.plist"
-alias stop_mysql="launchctl unload -w ~/Library/LaunchAgents/com.mysql.mysqld.plist"
+#!/usr/bin/bash
 
 # Git
 alias g="git status"
@@ -22,16 +20,16 @@ alias gd="git diff"
 alias gbl="git blame"
 alias gps="git push"
 alias gpl="git pull --rebase"
+alias grh="git reset --hard"
+alias gss="git status -sb"
 
 # TMUX
 alias ta="tmux attach"
 alias tls="tmux list-sessions"
 alias tk="tmux kill-server"
-alias t="tmux"
 
 # Personal
-alias start="cd ~/Projects"
-alias vi=vim
-alias gss="git status -sb"
+alias m ="nvim"
 alias gtest="./gradlew test"
-alias elastic="elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml"
+alias amm="~/amm"
+alias ggrep="ggrep --color=AUTO"

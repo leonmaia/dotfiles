@@ -1,6 +1,8 @@
-source ~/.dotfiles/zsh/env
-source ~/.dotfiles/zsh/functions
-source ~/.dotfiles/zsh/aliases
-source ~/.dotfiles/zsh/config
 
-source ~/.zshrc.local
+# load all files at ~/.dotfiles/zshrc.d
+for f in $(find ~/.dotfiles/zshrc.d/); do
+  if [ $(stat -f "%OLp" $f) -eq 755 ]; then
+    source $f;
+  fi
+done
+
