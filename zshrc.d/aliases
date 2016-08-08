@@ -4,7 +4,10 @@
 alias g="git status"
 alias ga="git add"
 alias gaa="git add --all"
-alias gc="git commit -m"
+# alias gc="git commit -m"
+function gc() {
+  git commit -S -m $1
+}
 alias gca="git commit -am"
 alias gb="git branch"
 alias gba="git branch -a"
@@ -29,7 +32,9 @@ alias tls="tmux list-sessions"
 alias tk="tmux kill-server"
 
 # Personal
-alias m ="nvim"
+alias m="nvim"
 alias gtest="./gradlew test"
 alias amm="~/amm"
 alias ggrep="ggrep --color=AUTO"
+
+alias cssh="i2cssh"

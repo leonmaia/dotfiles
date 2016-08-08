@@ -1,6 +1,8 @@
 #!/usr/bin/bash
 
 # Path to your oh-my-zsh installation.
+. `brew --prefix`/etc/profile.d/z.sh
+
 export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
@@ -56,3 +58,5 @@ bindkey "^v" history-beginning-search-forward
 
 # border colours
 set -g pane-active-border-bg default
+
+source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

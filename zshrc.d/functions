@@ -1,0 +1,7 @@
+function e {
+  gpg --output $3 --encrypt --recipient $2 $3
+}
+
+function dec {
+  gpg --output $1 --decrypt $2
+}
